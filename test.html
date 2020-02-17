@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<marquee behavior="scroll" direction="left">
+    <img src="./css/smile.gif" width="100" height="100" alt="smile">
+    </marquee>
+<style>
+   
+    .example1 {
+     height: 50px;	
+     overflow: hidden;
+     position: relative;
+    }
+    .example1 h3 {
+     font-size: 3em;
+     color: limegreen;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     line-height: 50px;
+     text-align: center;
+     /* Starting position */
+     -moz-transform:translateX(100%);
+     -webkit-transform:translateX(100%);	
+     transform:translateX(100%);
+     /* Apply animation to this element */	
+     -moz-animation: example1 15s linear infinite;
+     -webkit-animation: example1 15s linear infinite;
+     animation: example1 15s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes example1 {
+     0%   { -moz-transform: translateX(100%); }
+     100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes example1 {
+     0%   { -webkit-transform: translateX(100%); }
+     100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes example1 {
+     0%   { 
+     -moz-transform: translateX(100%); /* Firefox bug fix */
+     -webkit-transform: translateX(100%); /* Firefox bug fix */
+     transform: translateX(100%); 		
+     }
+     100% { 
+     -moz-transform: translateX(-100%); /* Firefox bug fix */
+     -webkit-transform: translateX(-100%); /* Firefox bug fix */
+     transform: translateX(-100%); 
+     }
+    }
+    marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: #8ebf42;
+      font-family: sans-serif;
+    </style>
+    
+    <!-- HTML -->	
+    <div class="example1">
+    <h3>Scrolling text... </h3>
+    </div>
+<body>
+    <marquee>A scrolling text created with HTML Marquee element.</marquee>
+    <!-- Navigation -->
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#band" class="w3-button w3-bar-item">Band</a>
+    <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  </nav>
+    <h1>Git Hub-Stuffs<h1>
+    <h2>Adding, Commiting, Pushing code</h2>
+
+    <p> <ul style="list-style-type:square;">
+        <li>git init</li>
+        <li>git add <folder1> <folder2> <etc.></etc.></li>
+        <li>git commit -m "Your message about the commit"</li>
+        <li>git remote add origin https://github.com/yourUsername/yourRepository.git</li>
+        <li>git push -u origin master</li>
+        <li>git push origin master</p></li>    
+    </ul>
+        
+        
+        
+</body>
+</html>
